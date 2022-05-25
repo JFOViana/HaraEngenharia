@@ -1,0 +1,223 @@
+<style>
+  .header-topo {
+z-index: 99;
+padding: 0 20px;
+position: fixed;
+width: 100%;
+background-color: #1b2738;
+height: 110px;
+display: flex;
+justify-content: space-between;
+}
+
+header a {
+text-decoration: none;
+}
+
+
+#HE {
+font-weight: bold;
+font-size: 18px;
+display: flex;
+align-items: center;
+width: 200px;
+}
+
+#HE a {
+color: #ffce03;
+}
+
+.menu-desk{
+list-style: none;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.menu-desk a {
+color: white;
+}
+
+.menu-desk li {
+padding: 5px;
+margin-left: 10px;
+}
+
+.menu-desk li:hover {
+transform: scale(1.1);
+transition: 0.3s;
+border: 1px solid;
+border-radius: 5px;
+color: #FFCE03;
+}
+
+a:hover{
+color: white;
+}
+
+#hamburger-icon {
+margin: auto 0;
+display: none;
+cursor: pointer;
+}
+
+#hamburger-icon div {
+width: 35px;
+height: 3px;
+background-color: white;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.open .bar1 {
+-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+opacity: 0;
+}
+
+.open .bar3 {
+-webkit-transform: rotate(45deg) translate(-6px, -8px);
+transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+position: absolute;
+top: 50px;
+left: 30vw;
+height: calc(100vh - 50px);
+width: 100%;
+opacity: 0;
+pointer-events: none;
+transition: 0.3s;
+}
+
+.mobile-menu{
+list-style: none;
+margin: 0 auto;
+display: flex;
+align-items: center;
+}
+
+.mobile-menu a {
+color: white;
+}
+
+.mobile-menu li {
+padding: 5px;
+margin-left: 10px;
+}
+
+.mobile-menu li:hover {
+transform: scale(1.1);
+transition: 0.3s;
+border: 1px solid;
+border-radius: 5px;
+color: #FFCE03;
+}
+
+.open {
+opacity: 1;
+pointer-events: unset;
+left: 0;
+}
+
+.mobile-menu li {
+margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1500px) {
+
+
+.card-services{
+display: block;
+
+
+}
+
+
+}
+
+@media only screen and (max-width: 680px) {
+
+
+
+header nav {
+display: none;
+}
+
+
+
+.card-services{
+height: 250px !important;
+width: 50% !important;
+}
+
+.clear-rodape img{
+width: 90%;
+}
+
+#hamburger-icon {
+display: block;
+}
+
+
+
+
+
+
+.container-projetos {
+display: flex;
+width: 100%;
+box-shadow: 0 -2px 10px grey;
+padding-bottom: 10px !important;
+height: auto !important;
+flex-direction: column;
+
+}
+
+
+.box{
+border-radius: 5px;
+margin-bottom: 20px !important;
+}
+
+
+.whatsapp{
+display: none;
+}
+
+
+
+.profile-card-feedback{
+left: 50% !important;
+}
+
+
+
+}
+</style>
+
+
+
+
+
+
+
+
+<html>
+  
+</html>
+
+
+<html>
+  
+
+</html>

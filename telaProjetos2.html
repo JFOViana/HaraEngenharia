@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="bootstrap.min.css" class="rel">
+    <script src="https://kit.fontawesome.com/a44c4a8435.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  </head>
+
+<header class="header-topo">
+  <div class="2"><a href="home.html"><img src="logo-haara.png" alt="teste" class="logo-teste"></a></div>
+  <nav>
+    <ul class="menu-desk">
+      <li><a href="/home.html" style="text-decoration: none;">Home</a></li>
+      <li id="quemsomos"><a href="/home.html#ir-quem-somos" style="text-decoration: none;">Quem Somos</a></li>
+      <li><a href="/home.html#ir-servicos" style="text-decoration: none;">Serviços</a></li>
+      <li><a href="/home.html#ir-projetos" style="text-decoration: none;">Projetos</a></li>
+      <li id="dep"><a href="/home.html#ir-depoimentos" style="text-decoration: none;">Depoimentos</a></li>
+      <li id="quemsomos"><a href="/home.html#ir-nosso-time" style="text-decoration: none;">Nosso Time</a></li>
+      <li id="contato"><a href="/home.html#ir-contato" style="text-decoration: none;">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div id="hamburger-icon" onclick="toggleMobileMenu()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <ul class="mobile-menu">
+    <li><a href="">Home</a></li>
+    <li id="quemsomos"><a href="#ir-quem-somos">Quem Somos</a></li>
+    <li><a href="#ir-servicos" style="text-decoration:none;">Serviços</a></li>
+    <li><a href="#ir-projetos">Projetos</a></li>
+    <li id="dep"><a href="#ir-depoimentos">Depoimentos</a></li>
+    <li id="contato"><a href="#ir-nosso-time">Nosso Time</a></li>
+  </ul>
+</header>
+
+
+
+
+
+
+  <main>
+    <div class="container">
+      <div class="grid product">
+        <div class="column-xs-12 column-md-7">
+          <div class="product-gallery">
+            <div class="product-image">
+              <img class="active" src="/images/casa1.jpg">
+            </div>
+            <ul class="image-list">
+              <li class="image-item"><img src="/images/casa1.jpg"></li>
+              <li class="image-item"><img src="/images/img2.jpg"></li>
+              <li class="image-item"><img src="/images/sobrado2.jpg"></li>
+  
+            </ul>
+          </div>
+        </div>
+        <div class="column-xs-12 column-md-5">
+          <div class="titulo-tela-proj">Residencial Ongaratto:</div>
+          <div class="descricao">
+            <p>Sobrados geminados unifamiliares, situados na cidade de Cascavel - PR. A obra possui área total 280m², dividida em 02 unidades com 140m².</p>
+            <p>Hara Engenharia desenvolveu projetos: Arquitetônico, hidráulico e estrutural e responsável pela execução!</p>
+          </div>
+          <a href="https://linktr.ee/haraengenharia" class="add-to-cart" target="_blank">Entre em Contato</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+  <!----FOOTER---->
+
+  <footer>
+    <div class="clear-rodape" style="position: relative; bottom: 0;">
+      <div class="texto-rodape"></div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+              <img src="logo-haara.png" alt="logo">
+                <div class="text-center social-btn">
+                  <a href="https://www.facebook.com/haraengenharia" target="_blank" class="btn btn-primary"><i class="fab fa-facebook-square" style="font-size: 20px;"></i></a>
+                  <a href="https://www.instagram.com/haraengenharia/" target="_blank" class="btn instagram" style=" margin-left: 4px; "><i class="fab fa-instagram" style="font-size: 20px;" aria-hidden="true"></i></a>
+                </div>
+                <div id="ir-contato"></div>
+              <p class="menu">
+                <a href="#ir-home">Home</a>
+                <a href="#ir-servicos">Serviços</a>
+                <a href="#ir-projetos">Projetos</a>
+                <a href="#ir-depoimentos">Depoimentos</a>
+                <a href="#ir-quem-somos">Quem Somos</a>
+                <a href="#ir-contato">Contato</a>
+                <a href="#ir-nosso-time">NossoTime</a>
+              </p>		
+            </div>
+          </div>
+      </div>
+  </footer>
+</main>
+</body>
+</html>
+
+
+
+<script>
+  const activeImage = document.querySelector(".product-image .active");
+const productImages = document.querySelectorAll(".image-list img");
+const navItem = document.querySelector('a.toggle-nav');
+
+function changeImage(e) {
+  activeImage.src = e.target.src;
+}
+
+function toggleNavigation(){
+  this.nextElementSibling.classList.toggle('active');
+}
+
+productImages.forEach(image => image.addEventListener("click", changeImage));
+navItem.addEventListener('click', toggleNavigation);
+</script>
+</html>
